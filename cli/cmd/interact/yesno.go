@@ -1,9 +1,11 @@
 package interact
 
-import "github.com/grtl/mysql-operator/cli/cmd/util"
+import (
+	"github.com/grtl/mysql-operator/cli/cmd/options"
+)
 
 // YesNoInput waits for user to input yes or no.
-func YesNoInput(options *util.Options) (bool, error) {
+func YesNoInput(options *options.Options) (bool, error) {
 	if options.AssumeYes {
 		return true, nil
 	}

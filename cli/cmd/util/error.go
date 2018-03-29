@@ -3,11 +3,13 @@ package util
 import (
 	"fmt"
 	"os"
+
+	"github.com/grtl/mysql-operator/cli/cmd/options"
 )
 
 // FailOnErrorOrForceContinue checks if error occurred and stops the execution
 // unless the force flag was specified.
-func FailOnErrorOrForceContinue(err error, options *Options) {
+func FailOnErrorOrForceContinue(err error, options *options.Options) {
 	if err == nil {
 		return
 	}

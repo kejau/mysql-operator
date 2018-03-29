@@ -1,4 +1,4 @@
-package util
+package options
 
 import (
 	"github.com/spf13/cobra"
